@@ -17,8 +17,11 @@ final class RMService {
     /// send rock and morty api call
     ///  - Parameters
     ///     - request: request instance
+    ///     - type : expect of type we expect to get back
     ///     - completion: callaback with data or error code
-    public func execute(_ request: RMRequest, complettion: @escaping ()->Void){
+    public func execute<T: Codable>(_ request: RMRequest,
+                                    expect type: T.Type,
+                                    completion: @escaping (Result<T, Error>)->Void){
         
     }
     
