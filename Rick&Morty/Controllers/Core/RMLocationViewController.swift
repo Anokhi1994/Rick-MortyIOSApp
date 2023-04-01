@@ -16,3 +16,4 @@ final class RMLocationViewController: UIViewController {
         title = "Locations"
     }
 }
+
